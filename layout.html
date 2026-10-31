@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Portal Yendi</h2>
+    <p>ceritakan tentang yendi</p>
+    <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML
+        Responsive.)</p>
+
+    <header>
+        <h2>Cities</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>London</h1>
+            <img src="assets/image/logo-ummy.png" alt="Trulli" width="60" height="60">
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+                metropolitan area of over 13 million inhabitants.</p>
+
+                Profil Yendi Putra
+                Yendi Putra, S.Kom., M.Kom., MTA
+                
+                Akademisi • Praktisi Teknologi Informasi • Pengembang Sistem Informasi
+                
+                Tempat lahir: Salimpuang
+                
+                Tanggal lahir: 3 Januari 1988
+                
+                Asal: Sumatera Barat
+                
+                Riwayat pendidikan
+                D1 LKP Palapa Komputer Batusangkar (2007).
+                
+                S1 Sistem Informasi, STMIK Indonesia Padang (2010–2014).
+                
+                S2 Universitas Putra Indonesia YPTK Padang (2018–2020).
+                
+                Riwayat pekerjaan dan aktivitas
+                Dosen Manajemen Informatika Universitas Mahaputra Muhammad Yamin.
+                
+                Guru Rekayasa Perangkat Lunak SMK Maritim Nusantara.
+                
+                Praktisi dan pengembang perangkat lunak.
+                
+                Software Engineer di Hulunews.
+                
+                Penggiat teknologi informasi dan Internet of Things.
+                
+                Ketua Relawan TIK Wilayah Sumatera Barat periode 2025–2027.
+                
+                Bidang keahlian
+                Teknologi Informasi.
+                
+                Pemrograman komputer.
+                
+                Internet of Things (IoT).
+                
+                Cybersecurity.
+                
+                Pengembangan aplikasi dan sistem informasi.
+                
+                Digitalisasi desa dan Smart Village.
+                
+                Prestasi
+                - Juara 3 Kompetisi Keterampilan Instruktur Nasional (KKIN) Wilayah Barat tahun 2022 di Banda Aceh.
+                
+                Sumber referensi:
+                
+                Biodata penulis Yendi Putra
+                
+                Profil profesional LinkedIn
+                
+                Profil alumni SMAN 2 Sungai Tarab
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going
+                back to its founding by the Romans, who named it Londinium.</p>
+        </article>
+
+        <h2>Image Maps</h2>
+        <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+        
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+        </map>
+<h2>Colgroup</h2>
+<p>Add the a colgroup with a col element that spans over two columns to define a style for the two columns:</p>
+
+<table style="width: 100%;">
+    <colgroup>
+        <col span="2" style="background-color: #D6EEEE">
+    </colgroup>
+    <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+    </tr>
+</table>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+
+
+</body>
+
+</html>
